@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+/* 메인 콘텐츠 */
+
+@font-face {
+    font-family: 'IM_Hyemin-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#main_content {
+   background: url("../img/star.gif");
+    /* background: url("../img/lens.jpg"); */
+      /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main_content > div {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 15px 0;
+}
+
+#main_content {
+   padding-top: 100px;
+}
+
+#main_content > #main_top div > img {
+    /* max-width: 100%;
+    height: auto; */
+    width: 100%;
+    height: auto;
+}
+
+#main_content > #main_container  {
+   
+    padding-bottom: 500px;
+}
+
+
+#main_content > #main_container > section #main_img  {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+}
+
+ 
+#main_content > #main_container > section article {
+    color: white;
+    padding: 150px, 0;
+    margin-top: 50px;
+    margin-bottom: 250px;
+    text-align: center;
+}
+
+#main_content > #main_container > section h1 {
+    
+    padding: 20px;
+    width: 100%;
+   margin: 0 auto;
+   font-size: 35px;
+}
+#main_content > #main_container > section span {
+    height: 400px;
+    margin-bottom: 20px;
+  
+    padding: 15px;
+    font-family:  IM_Hyemin-Regular;
+    font-size: 25px;
+}
+
+ 
+
+ 
+
+#main_content > #main_container > section > #other_games {
+    /* height: 400px; */
+    margin-bottom: 20px;
+   
+}
+
+#main_content > #main_container > section > #other_games > #other {
+ display: flex;
+ /* max-width: 960px; */
+ flex-wrap: wrap;  
+ margin: 0 auto;
+   
+}
+
+#main_content > #main_container > section > #other_games a {
+    /* display: inline-block;
+    width: calc(50% - 8px);  
+    height: 51px;
+   
+    margin: 2px;
+    line-height: 51px; */
+    padding: 20px;
+}
+
+#main_content > #main_container > section > #other_games a div {
+    /* display: inline-block; */
+    font-size: 18px;
+    color: white;
+    text-align: center;
+   
+}
+
+
+ 
+#main_content > #main_container > section > #other_games a img {
+    width: 200px;
+    height: 80px;
+}
+
+
+ 
+
+#main_content > #main_container > section > #reward {
+    height: 50px;
+    margin-bottom: 20px;
+     
+}
+
+
+ 
+
+#main_content > #main_container > section {
+    width: 730px;
+    float: left;
+}
+
+ 
+#main_content > #main_container > section {
+    width: 100%;
+}
+

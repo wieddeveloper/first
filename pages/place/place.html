@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>지도</title>
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/footer.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="/css/common.css">
+    <style>
+        .tab-pane {
+            padding-bottom: 30px;
+            padding-top: 10px;
+        }
+        .map {
+           width:100%;
+           height:350px; 
+          
+        }
+        #main_content { 
+            background-color: black;
+            padding-top: 90px;
+         }
+         #main_content > div {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    /* padding: 15px 0; */
+}
+
+.tab-content {
+    width: 100%;
+    height: auto;
+}
+h2, h4{color: white;}
+    </style>
+
+</head>
+
+<body>
+   
+  <div>
+    <header-component></header-component>
+  </div>
+     
+  
+   
+
+<div id="main_content">
+    <div id="main_container">
+        <section class="tab">
+        
+            <article class="tab-content">
+                <h2>인천</h2>
+                <!-- <ul class="nav nav-tabs" role="tablist" id="myTab">
+                    <li role="presentation" class="active"><a href="#place1" aria-controls="place1" role="tab" data-toggle="tab">장소1</a></li>
+                    <li role="presentation"><a href="#place2" aria-controls="place2" role="tab" data-toggle="tab">장소2</a></li>
+                    <li role="presentation"><a href="#place3" aria-controls="place3" role="tab" data-toggle="tab">장소3</a></li>
+                    <li role="presentation"><a href="#place4" aria-controls="place4" role="tab" data-toggle="tab">장소4</a></li>
+                </ul> -->
+               
+                    <div role="tabpanel" class="tab-pane active" id="place1">
+                        <div class="map" id="map1"  ></div>
+                        <div><h4>예술회관</h4>    </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="place2">
+                        <div class="map" id="map2"  ></div>
+                        <div><h4>송도 센트럴파크</h4>    </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="place3">
+                        <div class="map" id="map3"></div>
+                        <div><h4>송도 솔찬공원</h4>    </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="place4">
+                        <div class="map" id="map4" ></div>
+                        <div><h4>미정</h4>    </div>
+                    </div>
+                
+            </article>
+              
+           
+        </section>
+    </div>
+ 
+       
+   
+   
+    
+</div>
+
+<footer-component></footer-component>
+</body>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=22bc68ddd5822823fca4bfc5b041c644"></script>
+<script>
+
+    /* place1의 지도 */
+var mapContainer1 = document.getElementById('map1'), mapOption1 = {
+    center: new kakao.maps.LatLng(37.44948704416566, 126.70029129756904),
+    level: 3
+};
+var map1 = new kakao.maps.Map(mapContainer1, mapOption1);
+var markerPosition1 = new kakao.maps.LatLng(37.44948704416566, 126.70029129756904);
+var marker1 = new kakao.maps.Marker({
+    position: markerPosition1
+});
+marker1.setMap(map1);
+/* place2의 지도 */
+var mapContainer2 = document.getElementById('map2'), mapOption2 = {
+    center: new kakao.maps.LatLng(37.392873335773146, 126.63749485858213),
+    level: 3
+};
+var map2 = new kakao.maps.Map(mapContainer2, mapOption2);
+var markerPosition2 = new kakao.maps.LatLng(37.392873335773146, 126.63749485858213);
+var marker2 = new kakao.maps.Marker({
+    position: markerPosition2
+});
+marker2.setMap(map2);
+/* place3의 지도 */
+var mapContainer3 = document.getElementById('map3'), mapOption3 = {
+    center: new kakao.maps.LatLng(37.37199242725147, 126.62863487407935),
+    level: 3
+};
+var map3 = new kakao.maps.Map(mapContainer3, mapOption3);
+var markerPosition3 = new kakao.maps.LatLng(37.37199242725147, 126.62863487407935);
+var marker3 = new kakao.maps.Marker({
+    position: markerPosition3
+});
+marker3.setMap(map3);
+/* place4의 지도 */
+var mapContainer4 = document.getElementById('map4'), mapOption4 = {
+    center: new kakao.maps.LatLng(37.44948704416566, 126.70029129756904),
+    level: 3
+};
+var map4 = new kakao.maps.Map(mapContainer4, mapOption4);
+var markerPosition4 = new kakao.maps.LatLng(37.44948704416566, 126.70029129756904);
+var marker4 = new kakao.maps.Marker({
+    position: markerPosition4
+});
+marker4.setMap(map4);
+
+</script>
+</html>
