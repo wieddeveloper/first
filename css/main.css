@@ -57,9 +57,10 @@
  
 #main_content > #main_container > section article {
     color: white;
-    padding: 150px;
+  
     margin-top: 50px;
     margin-bottom: 250px;
+    
     text-align: center;
 }
 
@@ -134,10 +135,10 @@
 
  
 
-#main_content > #main_container > section {
+ /* #main_content > #main_container > section {
     width: 730px;
     float: left;
-}
+} */
 
  
 #main_content > #main_container > section {
@@ -156,10 +157,12 @@
 
     #main_content > #main_container > section > article {
         width: 100%;
+      
     }
 
     #main_content > #main_container > section > #other_games a {
         width: 100%;
+       
     }
 
  
