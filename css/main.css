@@ -48,7 +48,7 @@
 }
 
 
-#main_content > #main_container > section #main_img  {
+#main_content > #main_container > section .main_img  {
     max-width: 100%;
     height: auto;
     padding-bottom: 15px;
@@ -57,7 +57,7 @@
  
 #main_content > #main_container > section article {
     color: white;
-    padding: 150px, 0;
+    padding: 150px;
     margin-top: 50px;
     margin-bottom: 250px;
     text-align: center;
