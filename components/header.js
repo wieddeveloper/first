@@ -1,7 +1,7 @@
 const headerTemplate = document.createElement('template');
 
 headerTemplate.innerHTML = `
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/common.css">
    <style>
  
 
@@ -65,8 +65,9 @@ headerTemplate.innerHTML = `
     float: right;
     width: 23px;
     text-align:right;
-    padding-top: 4px;
+    padding-top: 25px;
     display: none;
+   
 }
 
 #main_header .trigger .close {
@@ -93,8 +94,9 @@ headerTemplate.innerHTML = `
         display: none;
     }
 
-    #main_header .trigger {
+    #main_header .gnb_container .gnb .trigger {
         display: block;
+         
     }
 
    

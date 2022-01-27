@@ -1,7 +1,7 @@
 const footerTemplate = document.createElement('template');
 
 footerTemplate.innerHTML = `
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/common.css">
   <style>
   #main_footer {
     background: black;
